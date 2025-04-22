@@ -90,3 +90,5 @@
 
 
 ## 📂프로젝트 자료
+
+[로드맵 구현 자료(PDF)](https://github.com/Lee1p/DevMap/blob/a544f9c370db1d7ea83e287ccda4415b0a7915b7/1%EC%A1%B0%20PPT.pdf)
