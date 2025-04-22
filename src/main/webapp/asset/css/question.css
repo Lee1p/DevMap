@@ -1,0 +1,262 @@
+/* SUIT-Regular 폰트 적용 */
+@font-face {
+    font-family: 'SUIT-Regular';
+    src:
+        url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2')
+        format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 폼이 위에서 내려오는 애니메이션 */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    opacity: 0; /* 처음에는 안 보임 */
+    transform: translateY(-100px); /* 위에서 내려오는 효과 */
+    animation: slideDown 1s ease-out forwards;
+}
+
+/* back 버튼 디자인 */
+.button-back {
+    background-color: #0064FF;  /* Back 버튼 색상 설정 */
+    color: white;  /* 텍스트 색상 흰색 */
+    border: none;  /* 테두리 제거 */
+    padding: 10px 20px;  /* 버튼의 여백 조정 (크기 조절) */
+    font-size: 16px;  /* 글자 크기 설정 */
+    transition: all 0.3s ease;  /* 부드러운 애니메이션 효과 */
+     border-radius: 8px;  /* 버튼 모서리를 둥글게 설정 */
+}
+
+/* next 버튼 디자인 */
+.button-next {
+    background-color: #808080;  /* 기본 배경을 회색으로 설정 */
+    color: rgba(255, 255, 255, 0.6);  /* 흐릿한 흰색 텍스트 */
+    border: none;  /* 테두리 제거 */
+    padding: 10px 20px;  /* 버튼의 여백 조정 (크기 조절) */
+    font-size: 16px;  /* 글자 크기 설정 */
+    transition: all 0.3s ease;  /* 부드러운 애니메이션 효과 */
+    border-radius: 8px;  /* 버튼 모서리를 둥글게 설정 */
+    cursor: not-allowed;  /* 비활성화된 상태에서 커서 모양 변경 */
+}
+
+/* 선택 후 활성화된 버튼 스타일 */
+.button-next.active {
+    background-color: #0064FF;  /* 선택 시 파란색 배경 */
+    color: white;  /* 텍스트 색상 흰색 */
+    cursor: pointer;  /* 활성화된 상태에서 커서 모양 변경 */
+}
+
+/* 비활성화된 버튼 스타일 */
+.button-next.disabled {
+    background-color: #808080;  /* 회색 배경 */
+    color: rgba(255, 255, 255, 0.6);  /* 흐릿한 흰색 텍스트 */
+    cursor: not-allowed;  /* 비활성화된 상태에서 커서 모양 변경 */
+}
+
+
+/* 마우스 오버 시 효과 */
+.button-back:hover {
+    background-color: #0052CC;  /* 마우스 오버 시 버튼 색상 */
+    box-shadow: 0 4px 10px rgba(0, 100, 255, 0.5);  /* 그림자 효과 */
+    transform: scale(1.1);  /* 버튼 크기 10% 키우기 */
+}
+
+.button-next.active:hover {
+    background-color: #0052CC;  /* 마우스 오버 시 버튼 색상 */
+    box-shadow: 0 4px 10px rgba(0, 100, 255, 0.5);  /* 그림자 효과 */
+    transform: scale(1.1);  /* 버튼 크기 10% 키우기 */
+}
+
+/* 비활성화된 버튼에 마우스 오버 효과 추가 */
+.button-next.disabled:hover {
+    background-color: #808080;  /* 비활성화 상태에서 마우스 오버 시 색상 변경 없도록 유지 */
+    transform: none;  /* 비활성화된 상태에서는 확대 효과 제거 */
+}
+
+.button-no-next {
+    background-color: #808080;  /* 비활성화 상태 기본 배경 */
+    color: rgba(255, 255, 255, 0.6);  /* 흐릿한 텍스트 */
+    border: none;  
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    cursor: not-allowed; /* 비활성화 상태의 커서 */
+}
+
+/* 버튼 활성화 상태 */
+.button-no-next.active {
+    background-color: #0064FF;  /* 활성화 시 배경색 */
+    color: white;  /* 활성화 시 글자색 */
+    cursor: pointer;  /* 활성화된 버튼에 포인터 커서 적용 */
+}
+
+/* 활성화된 상태에서 마우스 오버 */
+.button-no-next.active:hover {
+    background-color: #003E99;  /* 마우스 오버 시 더 어두운 파란색 */
+    transform: scale(1.1);  /* 버튼 크기 확대 */
+    box-shadow: 0 4px 10px rgba(0, 100, 255, 0.5);  /* 그림자 효과 */
+    
+}
+
+/* 비활성화된 버튼의 마우스 오버 */
+.button-no-next.disabled {
+    background-color: #808080;  /* 비활성화 상태 색상 유지 */
+    cursor: not-allowed;
+}
+
+
+/* keyframes 수정 */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 폼 스타일 */
+.form-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-family: 'SUIT-Regular', sans-serif;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* 인사말 스타일 */
+.form-box .greeting {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* 질문과 버튼 페이드인 효과 */
+.form-box .question, .button-container {
+    opacity: 0; /* 처음에는 안 보이게 설정 */
+    animation: fadeIn 0.6s ease-in forwards;
+    animation-delay: 0.3s; /* 폼이 등장한 후 1초 뒤에 나타남 */
+    font-size: 18px;
+}
+
+/* 이거 질문 스타일임. */
+.highlight {
+   
+    border-radius: 3px; /* 모서리 둥글게 */
+}
+
+/* 페이드인 애니메이션 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* 버튼 컨테이너 - 세로 배치, 좌측 정렬 */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 122px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+    /* 기본 그림자 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.button-color {
+	background-color: #C65FF9;
+}
+
+.button-container button:hover {
+    background-color: #C65FF9;
+    /* Hover 시 입체감 증가 */
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.button-container button:active {
+    /* 클릭 시 눌리는 효과 */
+    transform: translateY(2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.form-box > #dev {
+    margin-bottom: 60px;
+}
+
+/* 선택된 버튼에 테두리 색상 추가 */
+.button-color.selected {
+    border: 4px solid rgb(255, 0, 0);  /* 선택된 버튼에 테두리 색상 추가 */
+}
+
+/* 선택된 버튼을 마우스로 클릭하거나 hover 할 때 스타일 */
+.button-color.selected:hover {
+    border-color: 	rgb(255, 0, 0);  /* hover 시 테두리 색상 변경 */
+}
+
+/* back 버튼이랑 , Next 버튼 위치 조절 */
+.form-buttons {
+    margin-top: 70px;  /* 원하는 만큼 아래로 내리기 (값을 조정) */
+    display: flex;
+    justify-content: center;
+    gap: 60px;  /* 버튼 간 간격 조정 */
+}
+
+/* 기본 버튼 스타일 */
+.noexp-button {
+    background-color: #D0E8FF;  /* 연한 파란색 배경 */
+    color: rgb(0, 0, 0);  /* 진한 파란색 글씨 */
+    font-size: 16px;  /* 글자 크기 */
+    text-align: center;  /* 텍스트 중앙 정렬 */
+    border: 2px solid #A3D5FF;  /* 테두리 색상 */
+    padding: 12px 20px;  /* 내부 여백 */
+    border-radius: 8px;  /* 모서리를 둥글게 */
+    cursor: pointer;  /* 마우스를 올리면 포인터 표시 */
+    transition: all 0.3s ease;  /* 부드러운 변화 효과 */
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+    width: 100%;  /* 버튼을 부모 요소 기준으로 너비 100% */
+    margin-bottom: 30px;  /* 버튼 간격 */
+}
+
+/* 버튼 클릭(선택) 시 활성화 */
+.noexp-button.selected {
+    background-color: #0052CC;  /* 더 진한 파란색 */
+    color: white;  /* 글씨 색상을 흰색으로 */
+    border-color: #003E99;  /* 테두리 색 변경 */
+}
+
+/* 마우스 오버 효과 */
+.noexp-button:hover {
+    border-color: #0000FF;  /* 테두리 강조 */
+}
+
+.noexp-button-container {
+	opacity: 0; /* 처음에는 안 보이게 설정 */
+    animation: fadeIn 1.5s ease-in forwards;
+    animation-delay: 1s; /* 폼이 등장한 후 1초 뒤에 나타남 */
+}

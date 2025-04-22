@@ -1,0 +1,57 @@
+:root {
+	/* 소프트한 그라데이션 컬러 */
+	--gradient-1: #f5f7fa;
+	--gradient-2: #c3cfe2;
+	/* 메인 컬러: 부드러운 블루 계열 */
+	--primary: #6d9feb;
+	--primary-light: #b4d0ff;
+	--primary-dark: #4c7bd9;
+	/* 포인트 컬러: 친근한 코럴 계열 */
+	--accent: #ff7e67;
+	--accent-light: #ffbfb3;
+	--accent-dark: #e05e4b;
+	/* 중립 톤 */
+	--neutral-50: #f9fafb;
+	--neutral-100: #f3f4f6;
+	--neutral-200: #e5e7eb;
+	--neutral-300: #d2d5db;
+	--neutral-600: #6b7280;
+	--neutral-700: #374151;
+	--neutral-800: #1f2937;
+	/* 그림자 */
+	--shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+	--shadow-md: 0 8px 16px rgba(0, 0, 0, 0.06);
+	--shadow-lg: 0 16px 24px rgba(0, 0, 0, 0.08);
+	/* 라운드 처리 */
+	--radius-sm: 10px;
+	--radius-md: 16px;
+	--radius-lg: 24px;
+	--radius-xl: 32px;
+}
+
+
+
+/* 배경 요소 */
+.bg-element {
+	position: absolute;
+	border-radius: 50%;
+	filter: blur(80px);
+	opacity: 0.4;
+	z-index: -1;
+}
+
+.bg-element-1 {
+	width: 400px;
+	height: 400px;
+	background: var(--primary-light);
+	top: -100px;
+	left: -150px;
+}
+
+.bg-element-2 {
+	width: 350px;
+	height: 350px;
+	background: var(--accent-light);
+	bottom: 100px;
+	right: -100px;
+}
