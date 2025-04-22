@@ -91,4 +91,6 @@
 
 ## 📂프로젝트 자료
 
-[로드맵 구현 자료(PDF)](https://github.com/Lee1p/DevMap/blob/a544f9c370db1d7ea83e287ccda4415b0a7915b7/1%EC%A1%B0%20PPT.pdf)
+[로드맵 구현 자료(PDF)](https://github.com/Lee1p/DevMap/blob/a544f9c370db1d7ea83e287ccda4415b0a7915b7/1%EC%A1%B0%20PPT.pdf) </br>
+[최종 요약본(Word)](https://github.com/Lee1p/DevMap/blob/7daab5e4cda342e2c636848f2dbd70ca6beff610/1%EC%A1%B0%20%EC%B5%9C%EC%A2%85%20%EC%9A%94%EC%95%BD%EB%B3%B8.docx)
+
