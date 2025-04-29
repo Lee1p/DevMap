@@ -1,14 +1,8 @@
 
 <div align="center">
   <h1>🔍개발 입문자를 위한 로드맵 서비스</h1>
-
-
+  <img src="https://github.com/user-attachments/assets/7e980d19-98f4-40b1-850e-4f85a09e408a" width="700"/>
 </div>
-
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/6c1c74f8-7966-4c91-8fb3-0b0a902af286" width="500"/>
-</div>
-
 
 
 ## 👉 프로젝트 개요
@@ -17,16 +11,15 @@
 - **주요 타겟 사용자:** 개발 입문자 및 개발 초보자
 
 
-## 👨‍👩‍👦‍👦 팀원 및 팀 소개
+## 👨‍👩‍👦‍👦 팀원 소개
 | 박주승 | 정다음 | 조인제 | 이지원 | 김우현 | 이재현 |
 |:------:|:------:|:------:|:------:|:------:|:------:|
 | <img src="https://avatars.githubusercontent.com/u/101164389?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/109508170?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/192081152?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/192088392?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/201037613?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/127924248?s=400&u=adf530042c7c10bd7ced1989eb50df028ca904c8&v=4" width="120"/> |
 | BE/FE | BE/FE | PL | BE/FE | BE/FE | BE/FE |
 | [GitHub](https://github.com/ParkJuseung) | [GitHub](https://github.com/daumi125) | [GitHub](https://github.com/jnow424) | [GitHub](https://github.com/jern2) | [GitHub](https://github.com/uodolGod) | [GitHub](https://github.com/Lee1p) |
 
+<br/>
 
-<br/>
-<br/>
 
 ## 🧭 주요 기능 소개
 
@@ -84,9 +77,26 @@
 <img src="https://img.shields.io/badge/Notion-000000?style=for-the-badge&logo=notion&logoColor=white"/> <img src="https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white"/>
 ---
 
+## 📌 역할 분담
 
-## 설계도 
-![설계도](https://github.com/user-attachments/assets/de444af6-c135-4f61-97a7-4281e733b42d)
+| 이름 | 사진 | 담당 기능 |
+|------|------|------------|
+| 박주승 | <img src="https://avatars.githubusercontent.com/u/101164389?v=4" width="100"> | <ul><li>코딩 테스트 로드맵 디자인</li><li>초기화면, 소개 페이지 구현</li></ul> |
+| 정다음 | <img src="https://avatars.githubusercontent.com/u/109508170?v=4" width="100"> | <ul><li>마이페이지 작업</li><li>코드 UI/UX 리팩토링</li></ul> |
+| 조인제 | <img src="https://avatars.githubusercontent.com/u/192081152?v=4" width="100"> | <ul><li>회원가입 / 로그인 기능</li><li>사용자 퀴즈 기능</li></ul> |
+| 이지원 | <img src="https://avatars.githubusercontent.com/u/192088392?v=4" width="100"> | <ul><li>Java 클릭 시 학습페이지 구현</li><li>사이드바 구성</li></ul> |
+| 김우현 | <img src="https://avatars.githubusercontent.com/u/201037613?v=4" width="100"> | <ul><li>로드맵  개발</li><li>개발자 사전 테스트 구현</li></ul> |
+| 이재현 | <img src="https://avatars.githubusercontent.com/u/127924248?s=400&u=adf530042c7c10bd7ced1989eb50df028ca904c8&v=4" width="100"> | <ul><li>개발자 사전 테스트</li><li>개발 유형 테스트 구현</li></ul> |
+
+
+<br/>
+<br/>
+
+
+## 아키텍처
+![아키텍처](https://github.com/user-attachments/assets/de444af6-c135-4f61-97a7-4281e733b42d)
+
+
 
 
 ## 📂프로젝트 자료
