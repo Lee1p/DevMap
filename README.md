@@ -15,7 +15,7 @@
 | 박주승 | 정다음 | 조인제 | 이지원 | 김우현 | 이재현 |
 |:------:|:------:|:------:|:------:|:------:|:------:|
 | <img src="https://avatars.githubusercontent.com/u/101164389?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/109508170?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/192081152?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/192088392?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/201037613?v=4" width="120"/> | <img src="https://avatars.githubusercontent.com/u/127924248?s=400&u=adf530042c7c10bd7ced1989eb50df028ca904c8&v=4" width="120"/> |
-| BE/FE | BE/FE | PL | BE/FE | BE/FE | BE/FE |
+| BE | BE | PL | BE | BE | BE |
 | [GitHub](https://github.com/ParkJuseung) | [GitHub](https://github.com/daumi125) | [GitHub](https://github.com/jnow424) | [GitHub](https://github.com/jern2) | [GitHub](https://github.com/uodolGod) | [GitHub](https://github.com/Lee1p) |
 
 <br/>
